@@ -1,5 +1,9 @@
 #Take a number from 1 - 1000 and convert it to an english word string representation.
 
+# Expanded english_number. First, put in thousands; it should return 'one thousand' instead of (the sad) 'ten hundred' and 'ten thousand' instead of 'one hundred hundred'.
+
+# Now expand upon english_number some more. For example, put in millions so you get 'one million' instead of 'one thousand thousand'. Then try adding billions, trillions, and so on.
+
 def num_to_word(number)
     ones = [nil, "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
     
@@ -38,7 +42,8 @@ def num_to_word(number)
 end
 
 
-answer = nil # initialize the variable so you can invoke methods on it
+answer = nil 
+# initialize the variable so you can invoke methods on it
 
 puts "Give me a number!"
 until answer.is_a?(Fixnum) && answer <= 1000 do
